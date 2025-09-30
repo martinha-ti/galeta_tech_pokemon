@@ -1,0 +1,87 @@
+* {
+    margin: 0 auto;
+}
+
+body {
+    margin: 0;
+
+    background: linear-gradient(135deg, #e63946 0%, #f1c40f 40%, #f1faee 100%);
+
+    /* https://www.w3schools.com/css/css3_gradients.asp */
+
+    /* degrade suave e contínuo */
+    /* background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover; */
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #f1faee;
+}
+
+
+main {
+    width: 80%;
+    height: 600px;
+    /* background-color: aqua; */
+    margin-top: 20px;
+}
+
+#a,
+#b,
+#c {
+    width: 31%;
+    height: 600px;
+    float: left;
+    border: 1px solid #131313;
+    box-shadow: 5px 5px 15px #131313;
+    margin: 1%;
+    border-radius: 20px;
+    background-color: #187254;
+}
+
+#b {
+    background-color:#dd781c;
+}
+#c{ background-color: #dda825;}
+
+/* se o padding for aplicado nas tags internas eu não preciso ajustar as sections #a, #b e #c*/
+p {
+    padding: 2%;
+}
+
+h1 {
+    padding: 2%; text-shadow: 5px 5px 15px #131313;
+}
+
+img {
+    padding: 2%;
+    width: 96%;
+    border-radius: 20px;
+}
+
+.center {
+    text-align: center;
+}
+
+a {
+    color: #f1faee;
+    line-height: 30px;
+    text-decoration: none;
+}
+
+.btn {
+    width: 150px;
+    height: 30px;
+    /* background-color: #3c38b9; */
+    text-align: center;
+    border: 2px solid #e2e2e2;
+    border-radius: 20px;
+    margin-top: 15px;
+}
+
+/*responsividade*/
+@media only screen and (max-width: 768px) {
+    #a, #b, #c{ width: 100%;  height: auto;}
+    .btn{ margin-bottom: 20px;}
+
+}
